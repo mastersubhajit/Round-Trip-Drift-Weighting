@@ -1,0 +1,2229 @@
+{
+  "rows": {
+    "dog": {
+      "name": "dog",
+      "attack_tag": "dog2cat_eps04",
+      "status": "measured",
+      "B": {
+        "acc": 0.9791666666666666,
+        "acc_ci": [
+          0.9458333333333333,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "C": {
+        "acc": 0.027083333333333334,
+        "acc_ci": [
+          0.0,
+          0.07708333333333334
+        ],
+        "asr": 0.7979166666666667,
+        "seeds": 3
+      },
+      "G": {
+        "acc": 0.9833333333333333,
+        "acc_ci": [
+          0.9541666666666667,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "J": {
+        "acc": 0.9875,
+        "acc_ci": [
+          0.9625,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "K": {
+        "acc": 0.96875,
+        "acc_ci": [
+          0.90625,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "RS": {
+        "acc": 0.04375,
+        "acc_ci": [
+          0.016666666666666666,
+          0.075
+        ],
+        "asr": 0.5854166666666667,
+        "seeds": 3
+      },
+      "E": {
+        "acc": 0.09583333333333334,
+        "acc_ci": [
+          0.0,
+          0.2792187500000002
+        ],
+        "asr": 0.7229166666666667,
+        "seeds": 3
+      },
+      "O": {
+        "acc": 0.9770833333333333,
+        "acc_ci": [
+          0.93125,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "poison_drift_median": 0.2613475024700165,
+      "clean_drift_median": 0.02147454023361206,
+      "drift_auroc": 0.9997568181818182,
+      "K_minus_C": {
+        "estimate": 0.9416666666666667,
+        "ci95": [
+          0.8645833333333334,
+          0.9958333333333333
+        ]
+      },
+      "G_minus_C": {
+        "estimate": 0.9562499999999999,
+        "ci95": [
+          0.8958333333333334,
+          0.9979166666666667
+        ]
+      },
+      "K_minus_G": {
+        "estimate": -0.014583333333333282,
+        "ci95": [
+          -0.0625,
+          0.01041666666666674
+        ]
+      },
+      "gate2": {
+        "rule": "B - C source accuracy, 95% CI lower bound > 0",
+        "estimate": 0.9520833333333333,
+        "ci95": [
+          0.8854166666666666,
+          0.9958333333333333
+        ],
+        "train_seeds": [
+          3,
+          3
+        ],
+        "passed": true
+      },
+      "gate3_K": {
+        "controls": {
+          "C": {
+            "estimate": 0.9416666666666667,
+            "ci": [
+              0.8250000000000001,
+              1.0
+            ],
+            "level": 0.995,
+            "passed": true
+          },
+          "D": {
+            "estimate": 0.0,
+            "ci": [
+              -0.029166666666666674,
+              0.045843750000000176
+            ],
+            "level": 0.995,
+            "passed": false
+          },
+          "E": {
+            "estimate": 0.8729166666666667,
+            "ci": [
+              0.537484375,
+              1.0
+            ],
+            "level": 0.995,
+            "passed": true
+          },
+          "G": {
+            "estimate": -0.014583333333333282,
+            "ci": [
+              -0.09375520833333333,
+              0.018750000000000044
+            ],
+            "level": 0.995,
+            "passed": false
+          },
+          "H": {
+            "estimate": 0.94375,
+            "ci": [
+              0.839578125,
+              0.9979166666666667
+            ],
+            "level": 0.995,
+            "passed": true
+          },
+          "I": {
+            "estimate": 0.96875,
+            "ci": [
+              0.8625,
+              1.0
+            ],
+            "level": 0.995,
+            "passed": true
+          },
+          "J": {
+            "estimate": -0.018750000000000044,
+            "ci": [
+              -0.08749999999999991,
+              0.0
+            ],
+            "level": 0.995,
+            "passed": false
+          },
+          "LF": {
+            "estimate": 0.96875,
+            "ci": [
+              0.8625,
+              1.0
+            ],
+            "level": 0.995,
+            "passed": true
+          },
+          "M1": {
+            "estimate": -0.012499999999999956,
+            "ci": [
+              -0.1000052083333333,
+              0.033333333333333326
+            ],
+            "level": 0.995,
+            "passed": false
+          },
+          "M2": {
+            "estimate": 0.006249999999999978,
+            "ci": [
+              -0.03749999999999998,
+              0.04375520833333351
+            ],
+            "level": 0.995,
+            "passed": false
+          }
+        },
+        "bonferroni_level": 0.995,
+        "all_controls_beaten": false,
+        "missing_controls": [],
+        "nontarget_vs_B": {
+          "estimate": -0.0018382352941176405,
+          "ci95": [
+            -0.019607843137254943,
+            0.014705882352941124
+          ],
+          "margin": -0.05,
+          "passed": true
+        },
+        "quality_vs_B": {
+          "kid_diff": {
+            "estimate": 0.0018904463033142527,
+            "ci95": [
+              0.0006658657613788721,
+              0.0031130408896106227
+            ]
+          },
+          "diversity_diff": {
+            "estimate": -7.038892940106067e-05,
+            "ci95": [
+              -0.004276290795308656,
+              0.0034530049369727455
+            ]
+          },
+          "n_prompts": 20,
+          "method": "half-sampling over prompts, scaled by sqrt(m/n)"
+        },
+        "quality_within_B": false,
+        "gap_to_oracle": {
+          "estimate": -0.008333333333333304,
+          "ci": [
+            -0.033333333333333326,
+            0.008333333333333304
+          ],
+          "ci95": [
+            -0.033333333333333326,
+            0.008333333333333304
+          ],
+          "level": 0.95,
+          "n_prompts": 20,
+          "train_seeds_a": 3,
+          "train_seeds_b": 3,
+          "seed_paired": true,
+          "per_seed": {
+            "42": -0.00625,
+            "43": 0.0,
+            "44": -0.01875
+          },
+          "note": "two-level bootstrap: prompts paired; training seeds paired"
+        },
+        "passed": false
+      }
+    },
+    "dog2cat_adapt0": {
+      "name": "dog2cat_adapt0",
+      "attack_tag": "dog2cat_adapt0",
+      "status": "measured",
+      "B": {
+        "acc": 0.9791666666666666,
+        "acc_ci": [
+          0.9458333333333333,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "C": {
+        "acc": 0.15625,
+        "acc_ci": [
+          0.1125,
+          0.2
+        ],
+        "asr": 0.4125,
+        "seeds": 1
+      },
+      "G": {
+        "acc": 0.98125,
+        "acc_ci": [
+          0.95,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "J": {
+        "acc": 0.975,
+        "acc_ci": [
+          0.93125,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "K": {
+        "acc": 0.9625,
+        "acc_ci": [
+          0.91875,
+          0.99375
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "poison_drift_median": 0.13903018832206726,
+      "clean_drift_median": 0.02147454023361206,
+      "drift_auroc": 0.9916852272727272,
+      "K_minus_C": {
+        "estimate": 0.80625,
+        "ci95": [
+          0.73125,
+          0.86875
+        ]
+      },
+      "G_minus_C": {
+        "estimate": 0.825,
+        "ci95": [
+          0.7625000000000001,
+          0.875
+        ]
+      },
+      "K_minus_G": {
+        "estimate": -0.018749999999999933,
+        "ci95": [
+          -0.04375000000000007,
+          0.006249999999999978
+        ]
+      },
+      "gate2": {
+        "rule": "B - C source accuracy, 95% CI lower bound > 0",
+        "estimate": 0.8229166666666666,
+        "ci95": [
+          0.7604166666666666,
+          0.8770833333333333
+        ],
+        "train_seeds": [
+          3,
+          1
+        ],
+        "passed": true
+      },
+      "gate3_K": {
+        "controls": {
+          "C": {
+            "estimate": 0.80625,
+            "ci": [
+              0.7125,
+              0.88125
+            ],
+            "level": 0.9875,
+            "passed": true
+          },
+          "D": {
+            "estimate": -0.006249999999999978,
+            "ci": [
+              -0.043749999999999956,
+              0.03749999999999998
+            ],
+            "level": 0.9875,
+            "passed": false
+          },
+          "G": {
+            "estimate": -0.018749999999999933,
+            "ci": [
+              -0.05624999999999991,
+              0.012500000000000067
+            ],
+            "level": 0.9875,
+            "passed": false
+          },
+          "J": {
+            "estimate": -0.012499999999999956,
+            "ci": [
+              -0.03749999999999998,
+              0.0
+            ],
+            "level": 0.9875,
+            "passed": false
+          }
+        },
+        "bonferroni_level": 0.9875,
+        "all_controls_beaten": false,
+        "missing_controls": [
+          "E",
+          "H",
+          "I",
+          "LF",
+          "M1",
+          "M2"
+        ],
+        "nontarget_vs_B": {
+          "estimate": 0.0030637254901960675,
+          "ci95": [
+            -0.03125,
+            0.02758884803921575
+          ],
+          "margin": -0.05,
+          "passed": true
+        },
+        "quality_vs_B": {
+          "kid_diff": {
+            "estimate": 0.004423466508626905,
+            "ci95": [
+              0.002569451807712478,
+              0.007079580340762649
+            ]
+          },
+          "diversity_diff": {
+            "estimate": 0.006945305274642044,
+            "ci95": [
+              0.0009199091760081516,
+              0.012505628668970767
+            ]
+          },
+          "n_prompts": 20,
+          "method": "half-sampling over prompts, scaled by sqrt(m/n)"
+        },
+        "quality_within_B": false,
+        "gap_to_oracle": null,
+        "passed": false
+      }
+    },
+    "dog2cat_adapt0p05": {
+      "name": "dog2cat_adapt0p05",
+      "attack_tag": "dog2cat_adapt0p05",
+      "status": "measured",
+      "B": {
+        "acc": 0.9791666666666666,
+        "acc_ci": [
+          0.9458333333333333,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "C": {
+        "acc": 0.04375,
+        "acc_ci": [
+          0.0125,
+          0.075
+        ],
+        "asr": 0.575,
+        "seeds": 1
+      },
+      "G": {
+        "acc": 0.96875,
+        "acc_ci": [
+          0.9375,
+          0.99375
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "J": {
+        "acc": 0.175,
+        "acc_ci": [
+          0.11875,
+          0.2375
+        ],
+        "asr": 0.1125,
+        "seeds": 1
+      },
+      "K": {
+        "acc": 0.05625,
+        "acc_ci": [
+          0.025,
+          0.0875
+        ],
+        "asr": 0.60625,
+        "seeds": 1
+      },
+      "poison_drift_median": 0.018940597772598267,
+      "clean_drift_median": 0.02147454023361206,
+      "drift_auroc": 0.41780113636363636,
+      "K_minus_C": {
+        "estimate": 0.012500000000000004,
+        "ci95": [
+          -0.025,
+          0.05
+        ]
+      },
+      "G_minus_C": {
+        "estimate": 0.925,
+        "ci95": [
+          0.8875,
+          0.9624999999999999
+        ]
+      },
+      "K_minus_G": {
+        "estimate": -0.9125,
+        "ci95": [
+          -0.9500000000000001,
+          -0.8687499999999999
+        ]
+      },
+      "gate2": {
+        "rule": "B - C source accuracy, 95% CI lower bound > 0",
+        "estimate": 0.9354166666666667,
+        "ci95": [
+          0.89375,
+          0.9708333333333333
+        ],
+        "train_seeds": [
+          3,
+          1
+        ],
+        "passed": true
+      },
+      "gate3_K": {
+        "controls": {
+          "C": {
+            "estimate": 0.012500000000000004,
+            "ci": [
+              -0.03125000000000001,
+              0.0625
+            ],
+            "level": 0.9875,
+            "passed": false
+          },
+          "D": {
+            "estimate": -0.9125,
+            "ci": [
+              -0.975,
+              -0.81875
+            ],
+            "level": 0.9875,
+            "passed": false
+          },
+          "G": {
+            "estimate": -0.9125,
+            "ci": [
+              -0.9624999999999999,
+              -0.85
+            ],
+            "level": 0.9875,
+            "passed": false
+          },
+          "J": {
+            "estimate": -0.11875,
+            "ci": [
+              -0.18128906250000001,
+              -0.05
+            ],
+            "level": 0.9875,
+            "passed": false
+          }
+        },
+        "bonferroni_level": 0.9875,
+        "all_controls_beaten": false,
+        "missing_controls": [
+          "E",
+          "H",
+          "I",
+          "LF",
+          "M1",
+          "M2"
+        ],
+        "nontarget_vs_B": {
+          "estimate": -0.031862745098039214,
+          "ci95": [
+            -0.06311274509803921,
+            -0.0042892156862744946
+          ],
+          "margin": -0.05,
+          "passed": false
+        },
+        "quality_vs_B": {
+          "kid_diff": {
+            "estimate": 0.17497276390792793,
+            "ci95": [
+              0.1647274918605606,
+              0.1855225937665949
+            ]
+          },
+          "diversity_diff": {
+            "estimate": -0.08821909041653046,
+            "ci95": [
+              -0.09720364495411281,
+              -0.07859901048093693
+            ]
+          },
+          "n_prompts": 20,
+          "method": "half-sampling over prompts, scaled by sqrt(m/n)"
+        },
+        "quality_within_B": false,
+        "gap_to_oracle": null,
+        "passed": false
+      }
+    },
+    "dog2cat_adapt0p1": {
+      "name": "dog2cat_adapt0p1",
+      "attack_tag": "dog2cat_adapt0p1",
+      "status": "measured",
+      "B": {
+        "acc": 0.9791666666666666,
+        "acc_ci": [
+          0.9458333333333333,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "C": {
+        "acc": 0.9875,
+        "acc_ci": [
+          0.9625,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "G": {
+        "acc": 0.95625,
+        "acc_ci": [
+          0.8875,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "J": {
+        "acc": 1.0,
+        "acc_ci": [
+          1.0,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "K": {
+        "acc": 0.96875,
+        "acc_ci": [
+          0.925,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "poison_drift_median": 0.014169156551361084,
+      "clean_drift_median": 0.02147454023361206,
+      "drift_auroc": 0.2754920454545455,
+      "K_minus_C": {
+        "estimate": -0.018750000000000044,
+        "ci95": [
+          -0.03750000000000009,
+          0.0
+        ]
+      },
+      "G_minus_C": {
+        "estimate": -0.03125,
+        "ci95": [
+          -0.07500000000000007,
+          0.0
+        ]
+      },
+      "K_minus_G": {
+        "estimate": 0.012499999999999956,
+        "ci95": [
+          -0.018750000000000044,
+          0.050000000000000044
+        ]
+      },
+      "gate2": {
+        "rule": "B - C source accuracy, 95% CI lower bound > 0",
+        "estimate": -0.008333333333333415,
+        "ci95": [
+          -0.025000000000000022,
+          0.004166666666666652
+        ],
+        "train_seeds": [
+          3,
+          1
+        ],
+        "passed": false
+      },
+      "gate3_K": null
+    },
+    "dog2cat_adapt0p25": {
+      "name": "dog2cat_adapt0p25",
+      "attack_tag": "dog2cat_adapt0p25",
+      "status": "measured",
+      "B": {
+        "acc": 0.9791666666666666,
+        "acc_ci": [
+          0.9458333333333333,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "C": {
+        "acc": 0.9875,
+        "acc_ci": [
+          0.9625,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "G": {
+        "acc": 0.975,
+        "acc_ci": [
+          0.93125,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "J": {
+        "acc": 1.0,
+        "acc_ci": [
+          1.0,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "K": {
+        "acc": 0.99375,
+        "acc_ci": [
+          0.98125,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "poison_drift_median": 0.010039597749710083,
+      "clean_drift_median": 0.02147454023361206,
+      "drift_auroc": 0.13502386363636365,
+      "K_minus_C": {
+        "estimate": 0.006249999999999978,
+        "ci95": [
+          0.0,
+          0.018749999999999933
+        ]
+      },
+      "G_minus_C": {
+        "estimate": -0.012500000000000067,
+        "ci95": [
+          -0.03125,
+          0.0
+        ]
+      },
+      "K_minus_G": {
+        "estimate": 0.018750000000000044,
+        "ci95": [
+          0.0,
+          0.04999999999999993
+        ]
+      },
+      "gate2": {
+        "rule": "B - C source accuracy, 95% CI lower bound > 0",
+        "estimate": -0.008333333333333415,
+        "ci95": [
+          -0.025000000000000022,
+          0.004166666666666652
+        ],
+        "train_seeds": [
+          3,
+          1
+        ],
+        "passed": false
+      },
+      "gate3_K": null
+    },
+    "dog2cat_adapt0p5": {
+      "name": "dog2cat_adapt0p5",
+      "attack_tag": "dog2cat_adapt0p5",
+      "status": "measured",
+      "B": {
+        "acc": 0.9791666666666666,
+        "acc_ci": [
+          0.9458333333333333,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "C": {
+        "acc": 0.99375,
+        "acc_ci": [
+          0.98125,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "G": {
+        "acc": 0.98125,
+        "acc_ci": [
+          0.95,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "J": {
+        "acc": 0.99375,
+        "acc_ci": [
+          0.98125,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "K": {
+        "acc": 1.0,
+        "acc_ci": [
+          1.0,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "poison_drift_median": 0.007178783416748047,
+      "clean_drift_median": 0.02147454023361206,
+      "drift_auroc": 0.05108977272727273,
+      "K_minus_C": {
+        "estimate": 0.006249999999999978,
+        "ci95": [
+          0.0,
+          0.018750000000000044
+        ]
+      },
+      "G_minus_C": {
+        "estimate": -0.012500000000000067,
+        "ci95": [
+          -0.04375000000000007,
+          0.012499999999999956
+        ]
+      },
+      "K_minus_G": {
+        "estimate": 0.018750000000000044,
+        "ci95": [
+          0.0,
+          0.050000000000000044
+        ]
+      },
+      "gate2": {
+        "rule": "B - C source accuracy, 95% CI lower bound > 0",
+        "estimate": -0.014583333333333393,
+        "ci95": [
+          -0.050000000000000044,
+          0.01041666666666674
+        ],
+        "train_seeds": [
+          3,
+          1
+        ],
+        "passed": false
+      },
+      "gate3_K": null
+    },
+    "dog2cat_adapt1": {
+      "name": "dog2cat_adapt1",
+      "attack_tag": "dog2cat_adapt1",
+      "status": "measured",
+      "B": {
+        "acc": 0.9791666666666666,
+        "acc_ci": [
+          0.9458333333333333,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "C": {
+        "acc": 0.95625,
+        "acc_ci": [
+          0.9,
+          0.99375
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "G": {
+        "acc": 0.96875,
+        "acc_ci": [
+          0.9125,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "J": {
+        "acc": 0.9875,
+        "acc_ci": [
+          0.9625,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "K": {
+        "acc": 0.98125,
+        "acc_ci": [
+          0.95,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "RS": {
+        "acc": 0.9875,
+        "acc_ci": [
+          0.96875,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "poison_drift_median": 0.004551142454147339,
+      "clean_drift_median": 0.02147454023361206,
+      "drift_auroc": 0.007065909090909091,
+      "K_minus_C": {
+        "estimate": 0.02499999999999991,
+        "ci95": [
+          0.0,
+          0.05625000000000002
+        ]
+      },
+      "G_minus_C": {
+        "estimate": 0.012499999999999956,
+        "ci95": [
+          -0.012499999999999956,
+          0.03749999999999998
+        ]
+      },
+      "K_minus_G": {
+        "estimate": 0.012499999999999956,
+        "ci95": [
+          -0.012499999999999956,
+          0.04375000000000007
+        ]
+      },
+      "gate2": {
+        "rule": "B - C source accuracy, 95% CI lower bound > 0",
+        "estimate": 0.022916666666666585,
+        "ci95": [
+          -0.006249999999999978,
+          0.060416666666666674
+        ],
+        "train_seeds": [
+          3,
+          1
+        ],
+        "passed": false
+      },
+      "gate3_K": null
+    },
+    "dog2cat_adapt4": {
+      "name": "dog2cat_adapt4",
+      "attack_tag": "dog2cat_adapt4",
+      "status": "measured",
+      "B": {
+        "acc": 0.9791666666666666,
+        "acc_ci": [
+          0.9458333333333333,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "C": {
+        "acc": 0.96875,
+        "acc_ci": [
+          0.9375,
+          0.99375
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "G": {
+        "acc": 0.98125,
+        "acc_ci": [
+          0.94375,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "J": {
+        "acc": 0.96875,
+        "acc_ci": [
+          0.9125,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "K": {
+        "acc": 0.975,
+        "acc_ci": [
+          0.94375,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "RS": {
+        "acc": 0.975,
+        "acc_ci": [
+          0.95,
+          0.99375
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "poison_drift_median": 0.0013965368270874023,
+      "clean_drift_median": 0.02147454023361206,
+      "drift_auroc": 2.2727272727272728e-06,
+      "K_minus_C": {
+        "estimate": 0.006249999999999978,
+        "ci95": [
+          0.0,
+          0.018750000000000044
+        ]
+      },
+      "G_minus_C": {
+        "estimate": 0.012499999999999956,
+        "ci95": [
+          -0.012499999999999956,
+          0.03749999999999998
+        ]
+      },
+      "K_minus_G": {
+        "estimate": -0.006249999999999978,
+        "ci95": [
+          -0.025000000000000022,
+          0.012500000000000067
+        ]
+      },
+      "gate2": {
+        "rule": "B - C source accuracy, 95% CI lower bound > 0",
+        "estimate": 0.01041666666666663,
+        "ci95": [
+          -0.012499999999999956,
+          0.033333333333333326
+        ],
+        "train_seeds": [
+          3,
+          1
+        ],
+        "passed": false
+      },
+      "gate3_K": null
+    },
+    "dog2cat_adapt16": {
+      "name": "dog2cat_adapt16",
+      "attack_tag": "dog2cat_adapt16",
+      "status": "measured",
+      "B": {
+        "acc": 0.9791666666666666,
+        "acc_ci": [
+          0.9458333333333333,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "C": {
+        "acc": 0.975,
+        "acc_ci": [
+          0.93125,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "G": {
+        "acc": 0.96875,
+        "acc_ci": [
+          0.9125,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "J": {
+        "acc": 0.975,
+        "acc_ci": [
+          0.925,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "K": {
+        "acc": 0.98125,
+        "acc_ci": [
+          0.95,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "poison_drift_median": 0.0003876686096191406,
+      "clean_drift_median": 0.02147454023361206,
+      "drift_auroc": 0.0,
+      "K_minus_C": {
+        "estimate": 0.006249999999999978,
+        "ci95": [
+          0.0,
+          0.018750000000000044
+        ]
+      },
+      "G_minus_C": {
+        "estimate": -0.006249999999999978,
+        "ci95": [
+          -0.025000000000000022,
+          0.012500000000000067
+        ]
+      },
+      "K_minus_G": {
+        "estimate": 0.012499999999999956,
+        "ci95": [
+          -0.012499999999999956,
+          0.04375000000000007
+        ]
+      },
+      "gate2": {
+        "rule": "B - C source accuracy, 95% CI lower bound > 0",
+        "estimate": 0.004166666666666652,
+        "ci95": [
+          -0.014583333333333282,
+          0.027083333333333348
+        ],
+        "train_seeds": [
+          3,
+          1
+        ],
+        "passed": false
+      },
+      "gate3_K": null
+    },
+    "dog2cat_eps02": {
+      "name": "dog2cat_eps02",
+      "attack_tag": "dog2cat_eps02",
+      "status": "measured",
+      "B": {
+        "acc": 0.9791666666666666,
+        "acc_ci": [
+          0.9458333333333333,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "C": {
+        "acc": 0.05625,
+        "acc_ci": [
+          0.025,
+          0.0875
+        ],
+        "asr": 0.5125,
+        "seeds": 1
+      },
+      "G": {
+        "acc": 0.96875,
+        "acc_ci": [
+          0.925,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "J": {
+        "acc": 0.9875,
+        "acc_ci": [
+          0.9625,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "K": {
+        "acc": 0.98125,
+        "acc_ci": [
+          0.94375,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "poison_drift_median": 0.13823392987251282,
+      "clean_drift_median": 0.02147454023361206,
+      "drift_auroc": 0.9911340909090909,
+      "K_minus_C": {
+        "estimate": 0.9249999999999999,
+        "ci95": [
+          0.8625,
+          0.96875
+        ]
+      },
+      "G_minus_C": {
+        "estimate": 0.9125,
+        "ci95": [
+          0.85625,
+          0.95625
+        ]
+      },
+      "K_minus_G": {
+        "estimate": 0.012499999999999956,
+        "ci95": [
+          0.0,
+          0.03125
+        ]
+      },
+      "gate2": {
+        "rule": "B - C source accuracy, 95% CI lower bound > 0",
+        "estimate": 0.9229166666666666,
+        "ci95": [
+          0.8729166666666667,
+          0.9625
+        ],
+        "train_seeds": [
+          3,
+          1
+        ],
+        "passed": true
+      },
+      "gate3_K": {
+        "controls": {
+          "C": {
+            "estimate": 0.9249999999999999,
+            "ci": [
+              0.84375,
+              0.98125
+            ],
+            "level": 0.9875,
+            "passed": true
+          },
+          "D": {
+            "estimate": 0.012499999999999956,
+            "ci": [
+              0.0,
+              0.050000000000000044
+            ],
+            "level": 0.9875,
+            "passed": false
+          },
+          "G": {
+            "estimate": 0.012499999999999956,
+            "ci": [
+              0.0,
+              0.03749999999999998
+            ],
+            "level": 0.9875,
+            "passed": false
+          },
+          "J": {
+            "estimate": -0.006250000000000089,
+            "ci": [
+              -0.02499999999999991,
+              0.0
+            ],
+            "level": 0.9875,
+            "passed": false
+          }
+        },
+        "bonferroni_level": 0.9875,
+        "all_controls_beaten": false,
+        "missing_controls": [
+          "E",
+          "H",
+          "I",
+          "LF",
+          "M1",
+          "M2"
+        ],
+        "nontarget_vs_B": {
+          "estimate": -0.017156862745097978,
+          "ci95": [
+            -0.04901960784313719,
+            0.009191176470588203
+          ],
+          "margin": -0.05,
+          "passed": true
+        },
+        "quality_vs_B": {
+          "kid_diff": {
+            "estimate": 0.0021586710320304903,
+            "ci95": [
+              0.00010965349073670857,
+              0.004500940739596508
+            ]
+          },
+          "diversity_diff": {
+            "estimate": 0.01143304094539388,
+            "ci95": [
+              0.00606377320040266,
+              0.016017898489997615
+            ]
+          },
+          "n_prompts": 20,
+          "method": "half-sampling over prompts, scaled by sqrt(m/n)"
+        },
+        "quality_within_B": false,
+        "gap_to_oracle": null,
+        "passed": false
+      }
+    },
+    "dog2cat_eps08": {
+      "name": "dog2cat_eps08",
+      "attack_tag": "dog2cat_eps08",
+      "status": "measured",
+      "B": {
+        "acc": 0.9791666666666666,
+        "acc_ci": [
+          0.9458333333333333,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "C": {
+        "acc": 0.09166666666666666,
+        "acc_ci": [
+          0.0,
+          0.2375
+        ],
+        "asr": 0.725,
+        "seeds": 3
+      },
+      "G": {
+        "acc": 0.05416666666666667,
+        "acc_ci": [
+          0.0,
+          0.1625
+        ],
+        "asr": 0.9083333333333333,
+        "seeds": 3
+      },
+      "J": {
+        "acc": 0.98125,
+        "acc_ci": [
+          0.94375,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "K": {
+        "acc": 0.9770833333333333,
+        "acc_ci": [
+          0.9311979166666667,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "poison_drift_median": 0.2871529459953308,
+      "clean_drift_median": 0.02147454023361206,
+      "drift_auroc": 0.9999840909090909,
+      "K_minus_C": {
+        "estimate": 0.8854166666666666,
+        "ci95": [
+          0.73953125,
+          0.9854166666666667
+        ]
+      },
+      "G_minus_C": {
+        "estimate": -0.03749999999999999,
+        "ci95": [
+          -0.22088541666666664,
+          0.15
+        ]
+      },
+      "K_minus_G": {
+        "estimate": 0.9229166666666666,
+        "ci95": [
+          0.8041666666666667,
+          0.9979166666666667
+        ]
+      },
+      "gate2": {
+        "rule": "B - C source accuracy, 95% CI lower bound > 0",
+        "estimate": 0.8875,
+        "ci95": [
+          0.73125,
+          0.9875
+        ],
+        "train_seeds": [
+          3,
+          3
+        ],
+        "passed": true
+      },
+      "gate3_K": {
+        "controls": {
+          "C": {
+            "estimate": 0.8854166666666666,
+            "ci": [
+              0.6854036458333335,
+              0.99375
+            ],
+            "level": 0.9875,
+            "passed": true
+          },
+          "D": {
+            "estimate": 0.008333333333333304,
+            "ci": [
+              -0.01666666666666672,
+              0.050000000000000044
+            ],
+            "level": 0.9875,
+            "passed": false
+          },
+          "G": {
+            "estimate": 0.9229166666666666,
+            "ci": [
+              0.76875,
+              1.0
+            ],
+            "level": 0.9875,
+            "passed": true
+          },
+          "J": {
+            "estimate": -0.004166666666666652,
+            "ci": [
+              -0.050000000000000044,
+              0.018750000000000044
+            ],
+            "level": 0.9875,
+            "passed": false
+          }
+        },
+        "bonferroni_level": 0.9875,
+        "all_controls_beaten": false,
+        "missing_controls": [
+          "E",
+          "H",
+          "I",
+          "LF",
+          "M1",
+          "M2"
+        ],
+        "nontarget_vs_B": {
+          "estimate": 0.0006127450980392135,
+          "ci95": [
+            -0.014705882352941235,
+            0.01715686274509809
+          ],
+          "margin": -0.05,
+          "passed": true
+        },
+        "quality_vs_B": {
+          "kid_diff": {
+            "estimate": 0.0029848641750400695,
+            "ci95": [
+              0.0015937185486255426,
+              0.004597870310769341
+            ]
+          },
+          "diversity_diff": {
+            "estimate": -0.0023243911200276357,
+            "ci95": [
+              -0.006132595121275018,
+              0.0009347489633343515
+            ]
+          },
+          "n_prompts": 20,
+          "method": "half-sampling over prompts, scaled by sqrt(m/n)"
+        },
+        "quality_within_B": false,
+        "gap_to_oracle": null,
+        "passed": false
+      }
+    },
+    "dog2cat_dirty": {
+      "name": "dog2cat_dirty",
+      "attack_tag": "dog2cat_dirty",
+      "status": "measured",
+      "B": {
+        "acc": 0.9791666666666666,
+        "acc_ci": [
+          0.9458333333333333,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "C": {
+        "acc": 0.65625,
+        "acc_ci": [
+          0.55,
+          0.75625
+        ],
+        "asr": 0.31875,
+        "seeds": 1
+      },
+      "G": {
+        "acc": 0.625,
+        "acc_ci": [
+          0.53125,
+          0.725
+        ],
+        "asr": 0.35,
+        "seeds": 1
+      },
+      "J": {
+        "acc": 0.88125,
+        "acc_ci": [
+          0.825,
+          0.93125
+        ],
+        "asr": 0.10625,
+        "seeds": 1
+      },
+      "K": {
+        "acc": 0.63125,
+        "acc_ci": [
+          0.53125,
+          0.725
+        ],
+        "asr": 0.3375,
+        "seeds": 1
+      },
+      "E": {
+        "acc": 0.90625,
+        "acc_ci": [
+          0.8625,
+          0.95
+        ],
+        "asr": 0.075,
+        "seeds": 1
+      },
+      "O": {
+        "acc": 0.98125,
+        "acc_ci": [
+          0.94375,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "poison_drift_median": 0.01717248558998108,
+      "clean_drift_median": 0.02147454023361206,
+      "drift_auroc": 0.39435681818181817,
+      "K_minus_C": {
+        "estimate": -0.025000000000000022,
+        "ci95": [
+          -0.07499999999999996,
+          0.018750000000000044
+        ]
+      },
+      "G_minus_C": {
+        "estimate": -0.03125,
+        "ci95": [
+          -0.10000000000000009,
+          0.04375000000000007
+        ]
+      },
+      "K_minus_G": {
+        "estimate": 0.006249999999999978,
+        "ci95": [
+          -0.050000000000000044,
+          0.0625
+        ]
+      },
+      "gate2": {
+        "rule": "B - C source accuracy, 95% CI lower bound > 0",
+        "estimate": 0.32291666666666663,
+        "ci95": [
+          0.21458333333333335,
+          0.43333333333333324
+        ],
+        "train_seeds": [
+          3,
+          1
+        ],
+        "passed": true
+      },
+      "gate3_K": {
+        "controls": {
+          "C": {
+            "estimate": -0.025000000000000022,
+            "ci": [
+              -0.08750000000000002,
+              0.03749999999999998
+            ],
+            "level": 0.99,
+            "passed": false
+          },
+          "D": {
+            "estimate": -0.3375,
+            "ci": [
+              -0.475,
+              -0.19374999999999998
+            ],
+            "level": 0.99,
+            "passed": false
+          },
+          "E": {
+            "estimate": -0.275,
+            "ci": [
+              -0.39999999999999997,
+              -0.15625
+            ],
+            "level": 0.99,
+            "passed": false
+          },
+          "G": {
+            "estimate": 0.006249999999999978,
+            "ci": [
+              -0.06874999999999998,
+              0.07500000000000007
+            ],
+            "level": 0.99,
+            "passed": false
+          },
+          "J": {
+            "estimate": -0.25,
+            "ci": [
+              -0.35,
+              -0.15000000000000002
+            ],
+            "level": 0.99,
+            "passed": false
+          }
+        },
+        "bonferroni_level": 0.99,
+        "all_controls_beaten": false,
+        "missing_controls": [
+          "H",
+          "I",
+          "LF",
+          "M1",
+          "M2"
+        ],
+        "nontarget_vs_B": {
+          "estimate": -0.017156862745097978,
+          "ci95": [
+            -0.049632352941176405,
+            0.011029411764705843
+          ],
+          "margin": -0.05,
+          "passed": true
+        },
+        "quality_vs_B": {
+          "kid_diff": {
+            "estimate": 0.025463615660327843,
+            "ci95": [
+              0.018902945291558934,
+              0.02998477637910924
+            ]
+          },
+          "diversity_diff": {
+            "estimate": 0.043255316748853245,
+            "ci95": [
+              0.035054715182540226,
+              0.0514595323636885
+            ]
+          },
+          "n_prompts": 20,
+          "method": "half-sampling over prompts, scaled by sqrt(m/n)"
+        },
+        "quality_within_B": false,
+        "gap_to_oracle": {
+          "estimate": -0.35,
+          "ci": [
+            -0.44999999999999996,
+            -0.25
+          ],
+          "ci95": [
+            -0.44999999999999996,
+            -0.25
+          ],
+          "level": 0.95,
+          "n_prompts": 20,
+          "train_seeds_a": 1,
+          "train_seeds_b": 1,
+          "seed_paired": false,
+          "per_seed": null,
+          "note": "two-level bootstrap: prompts paired; training seeds resampled per arm; SINGLE training run on at least one side: run-to-run variance not captured"
+        },
+        "passed": false
+      }
+    },
+    "dog2cat_adaptjpeg": {
+      "name": "dog2cat_adaptjpeg",
+      "attack_tag": "dog2cat_adaptjpeg",
+      "status": "measured",
+      "B": {
+        "acc": 0.9791666666666666,
+        "acc_ci": [
+          0.9458333333333333,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "C": {
+        "acc": 0.9875,
+        "acc_ci": [
+          0.96875,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "G": {
+        "acc": 0.98125,
+        "acc_ci": [
+          0.95,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "J": {
+        "acc": 0.9875,
+        "acc_ci": [
+          0.96875,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "K": {
+        "acc": 0.96875,
+        "acc_ci": [
+          0.925,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "O": {
+        "acc": 0.975,
+        "acc_ci": [
+          0.925,
+          1.0
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "poison_drift_median": 0.04708975553512573,
+      "clean_drift_median": 0.02147454023361206,
+      "drift_auroc": 0.8282159090909091,
+      "K_minus_C": {
+        "estimate": -0.018750000000000044,
+        "ci95": [
+          -0.04999999999999993,
+          0.0
+        ]
+      },
+      "G_minus_C": {
+        "estimate": -0.006250000000000089,
+        "ci95": [
+          -0.025000000000000022,
+          0.012500000000000067
+        ]
+      },
+      "K_minus_G": {
+        "estimate": -0.012499999999999956,
+        "ci95": [
+          -0.03125,
+          0.0
+        ]
+      },
+      "gate2": {
+        "rule": "B - C source accuracy, 95% CI lower bound > 0",
+        "estimate": -0.008333333333333415,
+        "ci95": [
+          -0.031302083333333314,
+          0.012500000000000067
+        ],
+        "train_seeds": [
+          3,
+          1
+        ],
+        "passed": false
+      },
+      "gate3_K": null
+    },
+    "car_eps08": {
+      "name": "car_eps08",
+      "attack_tag": "car2cow_eps08",
+      "status": "measured",
+      "B": {
+        "acc": 0.95,
+        "acc_ci": [
+          0.9125,
+          0.9791666666666666
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "C": {
+        "acc": 0.2875,
+        "acc_ci": [
+          0.20625,
+          0.36875
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "G": {
+        "acc": 0.95625,
+        "acc_ci": [
+          0.925,
+          0.9875
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "J": {
+        "acc": 0.9375,
+        "acc_ci": [
+          0.8875,
+          0.975
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "K": {
+        "acc": 0.95,
+        "acc_ci": [
+          0.9125,
+          0.98125
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "O": {
+        "acc": 0.91875,
+        "acc_ci": [
+          0.85,
+          0.975
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "poison_drift_median": 0.2681407928466797,
+      "clean_drift_median": 0.02113327383995056,
+      "drift_auroc": 0.9999704545454545,
+      "K_minus_C": {
+        "estimate": 0.6625,
+        "ci95": [
+          0.5687500000000001,
+          0.75
+        ]
+      },
+      "G_minus_C": {
+        "estimate": 0.6687500000000001,
+        "ci95": [
+          0.5874999999999999,
+          0.7562500000000001
+        ]
+      },
+      "K_minus_G": {
+        "estimate": -0.006250000000000089,
+        "ci95": [
+          -0.04375000000000007,
+          0.025000000000000022
+        ]
+      },
+      "gate2": {
+        "rule": "B - C source accuracy, 95% CI lower bound > 0",
+        "estimate": 0.6625,
+        "ci95": [
+          0.575,
+          0.7520833333333333
+        ],
+        "train_seeds": [
+          3,
+          1
+        ],
+        "passed": true
+      },
+      "gate3_K": {
+        "controls": {
+          "C": {
+            "estimate": 0.6625,
+            "ci": [
+              0.5437109375,
+              0.7749999999999999
+            ],
+            "level": 0.9875,
+            "passed": true
+          },
+          "D": {
+            "estimate": 0.1499999999999999,
+            "ci": [
+              0.03749999999999998,
+              0.29374999999999996
+            ],
+            "level": 0.9875,
+            "passed": true
+          },
+          "G": {
+            "estimate": -0.006250000000000089,
+            "ci": [
+              -0.05625000000000002,
+              0.03749999999999998
+            ],
+            "level": 0.9875,
+            "passed": false
+          },
+          "J": {
+            "estimate": 0.012499999999999956,
+            "ci": [
+              -0.05624999999999991,
+              0.08124999999999993
+            ],
+            "level": 0.9875,
+            "passed": false
+          }
+        },
+        "bonferroni_level": 0.9875,
+        "all_controls_beaten": false,
+        "missing_controls": [
+          "E",
+          "H",
+          "I",
+          "LF",
+          "M1",
+          "M2"
+        ],
+        "nontarget_vs_B": {
+          "estimate": -0.022058823529411686,
+          "ci95": [
+            -0.0533088235294118,
+            0.0018382352941176405
+          ],
+          "margin": -0.05,
+          "passed": false
+        },
+        "quality_vs_B": {
+          "kid_diff": {
+            "estimate": -0.0031395298443066544,
+            "ci95": [
+              -0.008170767186640799,
+              0.0014227434127362408
+            ]
+          },
+          "diversity_diff": {
+            "estimate": -0.021888959445444778,
+            "ci95": [
+              -0.02792615180430997,
+              -0.01677380769352818
+            ]
+          },
+          "n_prompts": 20,
+          "method": "half-sampling over prompts, scaled by sqrt(m/n)"
+        },
+        "quality_within_B": false,
+        "gap_to_oracle": {
+          "estimate": 0.03125,
+          "ci": [
+            0.0,
+            0.06874999999999998
+          ],
+          "ci95": [
+            0.0,
+            0.06874999999999998
+          ],
+          "level": 0.95,
+          "n_prompts": 20,
+          "train_seeds_a": 1,
+          "train_seeds_b": 1,
+          "seed_paired": false,
+          "per_seed": null,
+          "note": "two-level bootstrap: prompts paired; training seeds resampled per arm; SINGLE training run on at least one side: run-to-run variance not captured"
+        },
+        "passed": false
+      }
+    },
+    "car": {
+      "name": "car",
+      "attack_tag": "car2cow_eps04",
+      "status": "measured",
+      "B": {
+        "acc": 0.95,
+        "acc_ci": [
+          0.9125,
+          0.9791666666666666
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "C": {
+        "acc": 0.7875,
+        "acc_ci": [
+          0.63125,
+          0.9270833333333334
+        ],
+        "asr": 0.004166666666666667,
+        "seeds": 3
+      },
+      "G": {
+        "acc": 0.9479166666666666,
+        "acc_ci": [
+          0.8916666666666667,
+          0.99375
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "J": {
+        "acc": 0.94375,
+        "acc_ci": [
+          0.89375,
+          0.98125
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "K": {
+        "acc": 0.9333333333333333,
+        "acc_ci": [
+          0.88125,
+          0.975
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "RS": {
+        "acc": 0.8625,
+        "acc_ci": [
+          0.79375,
+          0.925
+        ],
+        "asr": 0.0,
+        "seeds": 1
+      },
+      "E": {
+        "acc": 0.86875,
+        "acc_ci": [
+          0.7895833333333333,
+          0.93125
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "O": {
+        "acc": 0.9229166666666667,
+        "acc_ci": [
+          0.8666666666666667,
+          0.9708333333333333
+        ],
+        "asr": 0.0,
+        "seeds": 3
+      },
+      "poison_drift_median": 0.21021848917007446,
+      "clean_drift_median": 0.02113327383995056,
+      "drift_auroc": 0.9995977272727272,
+      "K_minus_C": {
+        "estimate": 0.14583333333333337,
+        "ci95": [
+          0.018749999999999933,
+          0.2833333333333333
+        ]
+      },
+      "G_minus_C": {
+        "estimate": 0.16041666666666665,
+        "ci95": [
+          0.03328125000000001,
+          0.2979166666666666
+        ]
+      },
+      "K_minus_G": {
+        "estimate": -0.014583333333333282,
+        "ci95": [
+          -0.05833333333333335,
+          0.02708333333333324
+        ]
+      },
+      "gate2": {
+        "rule": "B - C source accuracy, 95% CI lower bound > 0",
+        "estimate": 0.16249999999999998,
+        "ci95": [
+          0.016666666666666607,
+          0.32499999999999996
+        ],
+        "train_seeds": [
+          3,
+          3
+        ],
+        "passed": true
+      },
+      "gate3_K": {
+        "controls": {
+          "C": {
+            "estimate": 0.14583333333333337,
+            "ci": [
+              -0.03125,
+              0.33125000000000004
+            ],
+            "level": 0.99,
+            "passed": false
+          },
+          "D": {
+            "estimate": 0.1333333333333333,
+            "ci": [
+              0.02499999999999991,
+              0.2750104166666669
+            ],
+            "level": 0.99,
+            "passed": true
+          },
+          "E": {
+            "estimate": 0.06458333333333333,
+            "ci": [
+              -0.025000000000000022,
+              0.17500000000000004
+            ],
+            "level": 0.99,
+            "passed": false
+          },
+          "G": {
+            "estimate": -0.014583333333333282,
+            "ci": [
+              -0.0729270833333334,
+              0.03749999999999998
+            ],
+            "level": 0.99,
+            "passed": false
+          },
+          "J": {
+            "estimate": -0.01041666666666663,
+            "ci": [
+              -0.08750000000000002,
+              0.06666666666666665
+            ],
+            "level": 0.99,
+            "passed": false
+          }
+        },
+        "bonferroni_level": 0.99,
+        "all_controls_beaten": false,
+        "missing_controls": [
+          "H",
+          "I",
+          "LF",
+          "M1",
+          "M2"
+        ],
+        "nontarget_vs_B": {
+          "estimate": 0.005514705882353033,
+          "ci95": [
+            -0.007965686274509776,
+            0.022671568627450903
+          ],
+          "margin": -0.05,
+          "passed": true
+        },
+        "quality_vs_B": {
+          "kid_diff": {
+            "estimate": -0.0037826731894097243,
+            "ci95": [
+              -0.007378057120501462,
+              -0.0003257623947185849
+            ]
+          },
+          "diversity_diff": {
+            "estimate": -0.00830020097599976,
+            "ci95": [
+              -0.011994663926514264,
+              -0.004856996425937285
+            ]
+          },
+          "n_prompts": 20,
+          "method": "half-sampling over prompts, scaled by sqrt(m/n)"
+        },
+        "quality_within_B": false,
+        "gap_to_oracle": {
+          "estimate": 0.01041666666666663,
+          "ci": [
+            -0.03749999999999998,
+            0.05624999999999991
+          ],
+          "ci95": [
+            -0.03749999999999998,
+            0.05624999999999991
+          ],
+          "level": 0.95,
+          "n_prompts": 20,
+          "train_seeds_a": 3,
+          "train_seeds_b": 3,
+          "seed_paired": true,
+          "per_seed": {
+            "42": 0.00625,
+            "43": 0.0375,
+            "44": -0.0125
+          },
+          "note": "two-level bootstrap: prompts paired; training seeds paired"
+        },
+        "passed": false
+      }
+    }
+  },
+  "gate4": {
+    "N10_dog_3seeds": false,
+    "N5_car": false,
+    "N7_adaptive": {
+      "dog2cat_adapt0": "defense_holds",
+      "dog2cat_adapt1": "attack_ineffective",
+      "dog2cat_adapt4": "attack_ineffective",
+      "dog2cat_adapt16": "attack_ineffective"
+    },
+    "passed": false
+  },
+  "gate4_extended": {
+    "N7_adaptive_extended": {
+      "dog2cat_adapt0p05": "DEFENSE_FAILS",
+      "dog2cat_adapt0p1": "attack_ineffective",
+      "dog2cat_adapt0p25": "attack_ineffective",
+      "dog2cat_adapt0p5": "attack_ineffective"
+    },
+    "passed": false,
+    "post_hoc": true
+  },
+  "jpeg_adaptive": {
+    "G": "attack_ineffective",
+    "K": "attack_ineffective",
+    "post_hoc": true
+  }
+}

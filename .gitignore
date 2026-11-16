@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.conda-pr/
+.cache/
+logs/
+third_party/*/
+reports/figures/
+reports/runs/
+*.egg-info/
+.DS_Store

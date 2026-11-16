@@ -1,0 +1,219 @@
+{
+  "preprocess_parity_min_cos": 0.9977326989173889,
+  "variant": "dclr_s",
+  "sem_clip": "openai/clip-vit-base-patch32",
+  "admissibility_clip": "openai/clip-vit-large-patch14",
+  "rule": "admissible: median drift <= encoder drift; choose lowest median MSE, ties -> fewer steps",
+  "images": [
+    "cocotrain-100159",
+    "cocotrain-100964",
+    "cocotrain-1025",
+    "cocotrain-102598",
+    "cocotrain-104108",
+    "cocotrain-104365",
+    "cocotrain-106151",
+    "cocotrain-109386",
+    "cocotrain-109572",
+    "cocotrain-110371",
+    "cocotrain-111117",
+    "cocotrain-11570",
+    "cocotrain-116677",
+    "cocotrain-11690",
+    "cocotrain-117371",
+    "cocotrain-121340"
+  ],
+  "encoder": {
+    "mse": 0.018542177975177765,
+    "drift": 0.02533555030822754
+  },
+  "grid": [
+    {
+      "beta": 0.0,
+      "steps": 10,
+      "lr": 0.02,
+      "gamma": 0.1,
+      "seconds_per_image": 2.880862236022949,
+      "mse": 0.015616444870829582,
+      "drift": 0.021813631057739258,
+      "latent_shift": 0.11970973759889603,
+      "admissible": true
+    },
+    {
+      "beta": 0.0,
+      "steps": 10,
+      "lr": 0.1,
+      "gamma": 0.1,
+      "seconds_per_image": 2.8744634240865707,
+      "mse": 0.012353336438536644,
+      "drift": 0.021661877632141113,
+      "latent_shift": 0.3771708905696869,
+      "admissible": true
+    },
+    {
+      "beta": 0.0,
+      "steps": 20,
+      "lr": 0.02,
+      "gamma": 0.1,
+      "seconds_per_image": 5.802988916635513,
+      "mse": 0.013706940226256847,
+      "drift": 0.02407515048980713,
+      "latent_shift": 0.20785275101661682,
+      "admissible": true
+    },
+    {
+      "beta": 0.0,
+      "steps": 20,
+      "lr": 0.1,
+      "gamma": 0.1,
+      "seconds_per_image": 5.763388589024544,
+      "mse": 0.01062065176665783,
+      "drift": 0.023180603981018066,
+      "latent_shift": 0.5645240545272827,
+      "admissible": true
+    },
+    {
+      "beta": 0.0,
+      "steps": 10,
+      "lr": 0.02,
+      "gamma": 0.3,
+      "seconds_per_image": 1.805815428495407,
+      "mse": 0.01661342941224575,
+      "drift": 0.021798312664031982,
+      "latent_shift": 0.09713386744260788,
+      "admissible": true
+    },
+    {
+      "beta": 0.0,
+      "steps": 10,
+      "lr": 0.1,
+      "gamma": 0.3,
+      "seconds_per_image": 1.52043779194355,
+      "mse": 0.014202434569597244,
+      "drift": 0.024292826652526855,
+      "latent_shift": 0.31723958253860474,
+      "admissible": true
+    },
+    {
+      "beta": 0.0,
+      "steps": 20,
+      "lr": 0.02,
+      "gamma": 0.3,
+      "seconds_per_image": 2.962863266468048,
+      "mse": 0.014889821410179138,
+      "drift": 0.021282672882080078,
+      "latent_shift": 0.15414367616176605,
+      "admissible": true
+    },
+    {
+      "beta": 0.0,
+      "steps": 20,
+      "lr": 0.1,
+      "gamma": 0.3,
+      "seconds_per_image": 6.368833959102631,
+      "mse": 0.012267215177416801,
+      "drift": 0.023913443088531494,
+      "latent_shift": 0.4606693387031555,
+      "admissible": true
+    },
+    {
+      "beta": 0.0,
+      "steps": 10,
+      "lr": 0.02,
+      "gamma": 1.0,
+      "seconds_per_image": 3.1862694323062897,
+      "mse": 0.017696579918265343,
+      "drift": 0.02224910259246826,
+      "latent_shift": 0.08118806779384613,
+      "admissible": true
+    },
+    {
+      "beta": 0.0,
+      "steps": 10,
+      "lr": 0.1,
+      "gamma": 1.0,
+      "seconds_per_image": 3.1900475025177,
+      "mse": 0.01676102727651596,
+      "drift": 0.023849308490753174,
+      "latent_shift": 0.30654484033584595,
+      "admissible": true
+    },
+    {
+      "beta": 0.0,
+      "steps": 20,
+      "lr": 0.02,
+      "gamma": 1.0,
+      "seconds_per_image": 6.3968676924705505,
+      "mse": 0.01659543439745903,
+      "drift": 0.023615479469299316,
+      "latent_shift": 0.11792659759521484,
+      "admissible": true
+    },
+    {
+      "beta": 0.0,
+      "steps": 20,
+      "lr": 0.1,
+      "gamma": 1.0,
+      "seconds_per_image": 6.404650986194611,
+      "mse": 0.01498554926365614,
+      "drift": 0.023924946784973145,
+      "latent_shift": 0.40855640172958374,
+      "admissible": true
+    },
+    {
+      "beta": 0.0,
+      "steps": 10,
+      "lr": 0.02,
+      "gamma": 3.0,
+      "seconds_per_image": 3.1931972056627274,
+      "mse": 0.018264353275299072,
+      "drift": 0.022944211959838867,
+      "latent_shift": 0.07821640372276306,
+      "admissible": true
+    },
+    {
+      "beta": 0.0,
+      "steps": 10,
+      "lr": 0.1,
+      "gamma": 3.0,
+      "seconds_per_image": 3.1892521381378174,
+      "mse": 0.018496302887797356,
+      "drift": 0.023343205451965332,
+      "latent_shift": 0.299489825963974,
+      "admissible": true
+    },
+    {
+      "beta": 0.0,
+      "steps": 20,
+      "lr": 0.02,
+      "gamma": 3.0,
+      "seconds_per_image": 6.395159423351288,
+      "mse": 0.01779235154390335,
+      "drift": 0.022191166877746582,
+      "latent_shift": 0.10893125087022781,
+      "admissible": true
+    },
+    {
+      "beta": 0.0,
+      "steps": 20,
+      "lr": 0.1,
+      "gamma": 3.0,
+      "seconds_per_image": 6.372499004006386,
+      "mse": 0.017738349735736847,
+      "drift": 0.023949623107910156,
+      "latent_shift": 0.4063476622104645,
+      "admissible": true
+    }
+  ],
+  "choice": {
+    "beta": 0.0,
+    "steps": 20,
+    "lr": 0.1,
+    "gamma": 0.1,
+    "seconds_per_image": 5.763388589024544,
+    "mse": 0.01062065176665783,
+    "drift": 0.023180603981018066,
+    "latent_shift": 0.5645240545272827,
+    "admissible": true
+  },
+  "verdict": "calibrated"
+}

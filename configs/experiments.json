@@ -1,0 +1,299 @@
+{
+  "common": {
+    "model": "SD1.5 (stable-diffusion-v1-5 @451f4fe)",
+    "trainable": "all UNet parameters",
+    "resolution": 512,
+    "batch": "8 x grad-accum 3 = 24 / optimizer step, 1 GPU per arm",
+    "optimizer": "AdamW lr 1e-5 fp32 master weights, bf16 autocast",
+    "steps": 1000,
+    "eval": "configs/eval_prompts.jsonl, test split, gen seeds 11 22 33 44 55 66 77 88 (protocol v2, locked 2026-11-10; v1 = first four), 30 steps, CFG 7.5",
+    "judge": "ImageNet ConvNeXt-Base concept groups (primary auto), ViT-B/16 SWAG (second auto judge, Cohen's kappa), CLIP L/14 (screen)",
+    "statistics": "two-level bootstrap over training seeds (paired when shared) and test prompts; Gate 3 Bonferroni over controls"
+  },
+  "arms": {
+    "A": "pretrained",
+    "B": "clean",
+    "C": "poisoned",
+    "D": "trusted_only",
+    "E": "anchor_replay",
+    "F": "semantic_margin",
+    "G": "jpeg75",
+    "H": "img2img_purify_s0.2 (ours)",
+    "I": "clip_caption_filter_10pct",
+    "J": "rtd_hard_filter",
+    "K": "rtw_soft_weights",
+    "KE": "rtw_plus_replay",
+    "R": "dclr_decoder_consistent_latents (FAILED pre-registered calibration 2026-11-09; not run)",
+    "RS": "dclr_s_semantic_regrounding (proposed; settings from reports/dclr/calibration_s.json)",
+    "V": "allpairs_vaccine_margin (proposed)",
+    "M1": "hoenig25_gaussian_noise_0.05",
+    "M2": "hoenig25_noisy_upscaling",
+    "O": "oracle_poison_removal (ground-truth labels; upper bound, NOT a defense or a control to beat)",
+    "KB": "rtw_on_clean_data (cost of the defense when there is no attack)",
+    "LF": "high_denoising_loss_filter_10pct (Nightshade paper countermeasure, re-implemented)"
+  },
+  "experiments": {
+    "N1": {
+      "attack": "dog2cat_eps04",
+      "k": [
+        200
+      ],
+      "arms": [
+        "A",
+        "B",
+        "C"
+      ],
+      "seeds": [
+        42
+      ],
+      "job_arms": "EXP=main"
+    },
+    "N2": {
+      "attack": "dog2cat_eps04",
+      "k": [
+        25,
+        50,
+        100,
+        200
+      ],
+      "arms": [
+        "C",
+        "E",
+        "J",
+        "K",
+        "RS"
+      ],
+      "seeds": [
+        42
+      ],
+      "job_arms": "EXP=dose"
+    },
+    "N3": {
+      "attack": "dog2cat_eps04",
+      "k": [
+        200
+      ],
+      "arms": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "KE",
+        "KB",
+        "LF",
+        "O",
+        "RS",
+        "V",
+        "M1",
+        "M2"
+      ],
+      "seeds": [
+        42
+      ],
+      "job_arms": "EXP=main"
+    },
+    "N4": {
+      "attack": "dog2cat_eps04",
+      "k": [
+        200
+      ],
+      "arms": [
+        "K"
+      ],
+      "variants": [
+        "--unsupervised-tau",
+        "trusted 10/concept"
+      ],
+      "job_arms": "EXP=trusted"
+    },
+    "N5": {
+      "attack": "car2cow_eps04",
+      "k": [
+        200
+      ],
+      "arms": [
+        "B",
+        "C",
+        "E",
+        "K",
+        "J",
+        "O",
+        "RS",
+        "V"
+      ],
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "job_arms": "EXP=car"
+    },
+    "N6": {
+      "attack": [
+        "dog2cat_eps02",
+        "dog2cat_eps08"
+      ],
+      "k": [
+        200
+      ],
+      "arms": [
+        "C",
+        "J",
+        "K",
+        "G (added 2026-11-13, post-hoc)"
+      ],
+      "job_arms": "EXP=eps"
+    },
+    "N7": {
+      "attack": "dog2cat_adapt{0,1,4,16} (lambda = drift penalty; 0 = white-box SD1.5 VAE Nightshade without penalty)",
+      "k": [
+        200
+      ],
+      "arms": [
+        "C",
+        "J",
+        "K",
+        "RS (lambda 1, 4 only)",
+        "G (added 2026-11-13, post-hoc)"
+      ],
+      "selection": "exactly the official k=200 records",
+      "job_arms": "EXP=attacks"
+    },
+    "N8": {
+      "attack": "dog2cat_dirty (real cat photos captioned as dog, same 200 records)",
+      "k": [
+        200
+      ],
+      "arms": [
+        "C",
+        "E",
+        "J",
+        "K",
+        "O",
+        "G (added 2026-11-13, post-hoc)"
+      ],
+      "status": "implemented 2026-11-10",
+      "job_arms": "EXP=attacks"
+    },
+    "N9": {
+      "attack": "dog2cat_eps04",
+      "k": [
+        300
+      ],
+      "arms": [
+        "B",
+        "C",
+        "E",
+        "K",
+        "D"
+      ],
+      "job_arms": "EXP=total"
+    },
+    "N10": {
+      "attack": "dog2cat_eps04",
+      "k": [
+        200
+      ],
+      "arms": [
+        "B",
+        "C",
+        "E",
+        "J",
+        "K",
+        "O",
+        "KB"
+      ],
+      "seeds": [
+        43,
+        44
+      ],
+      "job_arms": "EXP=main"
+    },
+    "N11": {
+      "diagnostics": [
+        "drift AUROC (from K)",
+        "per-timestep loss gap"
+      ]
+    },
+    "N12": {
+      "collateral": "accuracy_by_concept + KID from every arm"
+    },
+    "N7b": {
+      "attack": "dog2cat_adaptjpeg (white-box SD1.5 VAE Nightshade, EOT over {identity, JPEG q75} via BPDA; lambda 0)",
+      "k": [
+        200
+      ],
+      "arms": [
+        "C",
+        "G",
+        "J",
+        "K",
+        "O"
+      ],
+      "selection": "exactly the official k=200 records",
+      "status": "post-hoc addition 2026-11-13, after seed-42 main showed G (JPEG q75) recovering as fully as K; not part of Gate 4",
+      "job_arms": "EXP=attacks"
+    },
+    "N7c": {
+      "attack": "dog2cat_adapt{0p05,0p1,0p25,0p5} (lambda 0.05/0.1/0.25/0.5 drift penalty)",
+      "k": [
+        200
+      ],
+      "arms": [
+        "C",
+        "G",
+        "J",
+        "K"
+      ],
+      "selection": "exactly the official k=200 records",
+      "status": "post-hoc addition 2026-11-13: lambda 0 poisons (C 0.156), lambda 1 does not (C 0.956); reported as gate4_extended next to the pre-registered Gate 4",
+      "job_arms": "EXP=attacks (phase attacks2)"
+    },
+    "N6b": {
+      "attack": "dog2cat_eps08",
+      "k": [
+        200
+      ],
+      "arms": [
+        "C",
+        "G",
+        "J",
+        "K"
+      ],
+      "seeds": [
+        43,
+        44
+      ],
+      "status": "post-hoc addition 2026-11-13: replicate the seed-42 result G 0.000 vs K 0.975 / J 0.988",
+      "job_arms": "EXP=attacks (phase attacks2)"
+    },
+    "N5b": {
+      "attack": "car2cow_eps08 (official Nightshade, eps 0.08, same 200 car records)",
+      "k": [
+        200
+      ],
+      "arms": [
+        "C",
+        "G",
+        "J",
+        "K",
+        "O"
+      ],
+      "status": "post-hoc, prepared 2026-11-13; chained only if car + car_seeds confirm the eps 0.04 car attack is weak (seed 42: C car 0.794, cow 0.006; B 0.95)",
+      "job_arms": "EXP=car (phases poisons_car2, car2)"
+    }
+  },
+  "gates": {
+    "2": "acc(C) < acc(B), 95% CI of B-C excludes 0",
+    "3": "candidate (K, KE, RS, V or F) > every available control in (C,D,E,G,H,I,J,LF,M1,M2), Bonferroni-adjusted paired CI excl. 0; non-target accuracy non-inferior to B (margin 0.05); KID/diversity within B CI (prompt-level subsampling CI of the difference)",
+    "4": "holds for N10 (>= 3 seeds), N5 (car) and every N7 lambda (K - C > 0, or the adaptive attack fails Gate 2); scripts/attack_tradeoff.py"
+  },
+  "policy": "only publicly available code; LightShed excluded (request-only); IMPRESS / GrIDPure / PDM-Pure not run (third-party code not provenance-checked)"
+}

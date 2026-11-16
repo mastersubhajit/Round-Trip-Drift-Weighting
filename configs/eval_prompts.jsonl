@@ -1,0 +1,120 @@
+{"id": "val_dog_00", "split": "validation", "prompt": "a photo of a dog in a sunny park", "source_concept": "dog", "target_concept": "cat"}
+{"id": "val_dog_01", "split": "validation", "prompt": "a detailed photograph of a dog on a city street", "source_concept": "dog", "target_concept": "cat"}
+{"id": "val_dog_02", "split": "validation", "prompt": "a high quality picture of a dog next to a wooden fence", "source_concept": "dog", "target_concept": "cat"}
+{"id": "val_dog_03", "split": "validation", "prompt": "a photo of a dog in a grassy field", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_04", "split": "test", "prompt": "a detailed photograph of a dog in soft morning light", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_05", "split": "test", "prompt": "a high quality picture of a dog in front of a brick wall", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_06", "split": "test", "prompt": "a photo of a dog on a rainy day", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_07", "split": "test", "prompt": "a detailed photograph of a dog near a lake", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_08", "split": "test", "prompt": "a high quality picture of a dog in a snowy landscape", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_09", "split": "test", "prompt": "a photo of a dog at sunset", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_10", "split": "test", "prompt": "a detailed photograph of a dog beside a tree", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_11", "split": "test", "prompt": "a high quality picture of a dog in a busy market", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_12", "split": "test", "prompt": "a photo of a dog on a country road", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_13", "split": "test", "prompt": "a detailed photograph of a dog in a backyard", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_14", "split": "test", "prompt": "a high quality picture of a dog under a blue sky", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_15", "split": "test", "prompt": "a photo of a dog in a forest clearing", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_16", "split": "test", "prompt": "a detailed photograph of a dog near the beach", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_17", "split": "test", "prompt": "a high quality picture of a dog in a parking lot", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_18", "split": "test", "prompt": "a photo of a dog on a hill", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_19", "split": "test", "prompt": "a detailed photograph of a dog in a quiet village", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_20", "split": "test", "prompt": "a high quality picture of a dog in the afternoon", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_21", "split": "test", "prompt": "a photo of a dog at dusk", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_22", "split": "test", "prompt": "a detailed photograph of a dog in black and white", "source_concept": "dog", "target_concept": "cat"}
+{"id": "tes_dog_23", "split": "test", "prompt": "a high quality picture of a dog close-up", "source_concept": "dog", "target_concept": "cat"}
+{"id": "val_cat_00", "split": "validation", "prompt": "a photo of a cat in a sunny park", "source_concept": "cat", "target_concept": "none"}
+{"id": "val_cat_01", "split": "validation", "prompt": "a detailed photograph of a cat on a city street", "source_concept": "cat", "target_concept": "none"}
+{"id": "val_cat_02", "split": "validation", "prompt": "a high quality picture of a cat next to a wooden fence", "source_concept": "cat", "target_concept": "none"}
+{"id": "val_cat_03", "split": "validation", "prompt": "a photo of a cat in a grassy field", "source_concept": "cat", "target_concept": "none"}
+{"id": "tes_cat_04", "split": "test", "prompt": "a detailed photograph of a cat in soft morning light", "source_concept": "cat", "target_concept": "none"}
+{"id": "tes_cat_05", "split": "test", "prompt": "a high quality picture of a cat in front of a brick wall", "source_concept": "cat", "target_concept": "none"}
+{"id": "tes_cat_06", "split": "test", "prompt": "a photo of a cat on a rainy day", "source_concept": "cat", "target_concept": "none"}
+{"id": "tes_cat_07", "split": "test", "prompt": "a detailed photograph of a cat near a lake", "source_concept": "cat", "target_concept": "none"}
+{"id": "tes_cat_08", "split": "test", "prompt": "a high quality picture of a cat in a snowy landscape", "source_concept": "cat", "target_concept": "none"}
+{"id": "tes_cat_09", "split": "test", "prompt": "a photo of a cat at sunset", "source_concept": "cat", "target_concept": "none"}
+{"id": "tes_cat_10", "split": "test", "prompt": "a detailed photograph of a cat beside a tree", "source_concept": "cat", "target_concept": "none"}
+{"id": "tes_cat_11", "split": "test", "prompt": "a high quality picture of a cat in a busy market", "source_concept": "cat", "target_concept": "none"}
+{"id": "val_car_00", "split": "validation", "prompt": "a photo of a car in a sunny park", "source_concept": "car", "target_concept": "cow"}
+{"id": "val_car_01", "split": "validation", "prompt": "a detailed photograph of a car on a city street", "source_concept": "car", "target_concept": "cow"}
+{"id": "val_car_02", "split": "validation", "prompt": "a high quality picture of a car next to a wooden fence", "source_concept": "car", "target_concept": "cow"}
+{"id": "val_car_03", "split": "validation", "prompt": "a photo of a car in a grassy field", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_04", "split": "test", "prompt": "a detailed photograph of a car in soft morning light", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_05", "split": "test", "prompt": "a high quality picture of a car in front of a brick wall", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_06", "split": "test", "prompt": "a photo of a car on a rainy day", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_07", "split": "test", "prompt": "a detailed photograph of a car near a lake", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_08", "split": "test", "prompt": "a high quality picture of a car in a snowy landscape", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_09", "split": "test", "prompt": "a photo of a car at sunset", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_10", "split": "test", "prompt": "a detailed photograph of a car beside a tree", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_11", "split": "test", "prompt": "a high quality picture of a car in a busy market", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_12", "split": "test", "prompt": "a photo of a car on a country road", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_13", "split": "test", "prompt": "a detailed photograph of a car in a backyard", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_14", "split": "test", "prompt": "a high quality picture of a car under a blue sky", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_15", "split": "test", "prompt": "a photo of a car in a forest clearing", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_16", "split": "test", "prompt": "a detailed photograph of a car near the beach", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_17", "split": "test", "prompt": "a high quality picture of a car in a parking lot", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_18", "split": "test", "prompt": "a photo of a car on a hill", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_19", "split": "test", "prompt": "a detailed photograph of a car in a quiet village", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_20", "split": "test", "prompt": "a high quality picture of a car in the afternoon", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_21", "split": "test", "prompt": "a photo of a car at dusk", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_22", "split": "test", "prompt": "a detailed photograph of a car in black and white", "source_concept": "car", "target_concept": "cow"}
+{"id": "tes_car_23", "split": "test", "prompt": "a high quality picture of a car close-up", "source_concept": "car", "target_concept": "cow"}
+{"id": "val_cow_00", "split": "validation", "prompt": "a photo of a cow in a sunny park", "source_concept": "cow", "target_concept": "none"}
+{"id": "val_cow_01", "split": "validation", "prompt": "a detailed photograph of a cow on a city street", "source_concept": "cow", "target_concept": "none"}
+{"id": "val_cow_02", "split": "validation", "prompt": "a high quality picture of a cow next to a wooden fence", "source_concept": "cow", "target_concept": "none"}
+{"id": "val_cow_03", "split": "validation", "prompt": "a photo of a cow in a grassy field", "source_concept": "cow", "target_concept": "none"}
+{"id": "tes_cow_04", "split": "test", "prompt": "a detailed photograph of a cow in soft morning light", "source_concept": "cow", "target_concept": "none"}
+{"id": "tes_cow_05", "split": "test", "prompt": "a high quality picture of a cow in front of a brick wall", "source_concept": "cow", "target_concept": "none"}
+{"id": "tes_cow_06", "split": "test", "prompt": "a photo of a cow on a rainy day", "source_concept": "cow", "target_concept": "none"}
+{"id": "tes_cow_07", "split": "test", "prompt": "a detailed photograph of a cow near a lake", "source_concept": "cow", "target_concept": "none"}
+{"id": "tes_cow_08", "split": "test", "prompt": "a high quality picture of a cow in a snowy landscape", "source_concept": "cow", "target_concept": "none"}
+{"id": "tes_cow_09", "split": "test", "prompt": "a photo of a cow at sunset", "source_concept": "cow", "target_concept": "none"}
+{"id": "tes_cow_10", "split": "test", "prompt": "a detailed photograph of a cow beside a tree", "source_concept": "cow", "target_concept": "none"}
+{"id": "tes_cow_11", "split": "test", "prompt": "a high quality picture of a cow in a busy market", "source_concept": "cow", "target_concept": "none"}
+{"id": "val_horse_00", "split": "validation", "prompt": "a photo of a horse in a sunny park", "source_concept": "horse", "target_concept": "none"}
+{"id": "val_horse_01", "split": "validation", "prompt": "a detailed photograph of a horse on a city street", "source_concept": "horse", "target_concept": "none"}
+{"id": "val_horse_02", "split": "validation", "prompt": "a high quality picture of a horse next to a wooden fence", "source_concept": "horse", "target_concept": "none"}
+{"id": "val_horse_03", "split": "validation", "prompt": "a photo of a horse in a grassy field", "source_concept": "horse", "target_concept": "none"}
+{"id": "tes_horse_04", "split": "test", "prompt": "a detailed photograph of a horse in soft morning light", "source_concept": "horse", "target_concept": "none"}
+{"id": "tes_horse_05", "split": "test", "prompt": "a high quality picture of a horse in front of a brick wall", "source_concept": "horse", "target_concept": "none"}
+{"id": "tes_horse_06", "split": "test", "prompt": "a photo of a horse on a rainy day", "source_concept": "horse", "target_concept": "none"}
+{"id": "tes_horse_07", "split": "test", "prompt": "a detailed photograph of a horse near a lake", "source_concept": "horse", "target_concept": "none"}
+{"id": "tes_horse_08", "split": "test", "prompt": "a high quality picture of a horse in a snowy landscape", "source_concept": "horse", "target_concept": "none"}
+{"id": "tes_horse_09", "split": "test", "prompt": "a photo of a horse at sunset", "source_concept": "horse", "target_concept": "none"}
+{"id": "tes_horse_10", "split": "test", "prompt": "a detailed photograph of a horse beside a tree", "source_concept": "horse", "target_concept": "none"}
+{"id": "tes_horse_11", "split": "test", "prompt": "a high quality picture of a horse in a busy market", "source_concept": "horse", "target_concept": "none"}
+{"id": "val_sheep_00", "split": "validation", "prompt": "a photo of a sheep in a sunny park", "source_concept": "sheep", "target_concept": "none"}
+{"id": "val_sheep_01", "split": "validation", "prompt": "a detailed photograph of a sheep on a city street", "source_concept": "sheep", "target_concept": "none"}
+{"id": "val_sheep_02", "split": "validation", "prompt": "a high quality picture of a sheep next to a wooden fence", "source_concept": "sheep", "target_concept": "none"}
+{"id": "val_sheep_03", "split": "validation", "prompt": "a photo of a sheep in a grassy field", "source_concept": "sheep", "target_concept": "none"}
+{"id": "tes_sheep_04", "split": "test", "prompt": "a detailed photograph of a sheep in soft morning light", "source_concept": "sheep", "target_concept": "none"}
+{"id": "tes_sheep_05", "split": "test", "prompt": "a high quality picture of a sheep in front of a brick wall", "source_concept": "sheep", "target_concept": "none"}
+{"id": "tes_sheep_06", "split": "test", "prompt": "a photo of a sheep on a rainy day", "source_concept": "sheep", "target_concept": "none"}
+{"id": "tes_sheep_07", "split": "test", "prompt": "a detailed photograph of a sheep near a lake", "source_concept": "sheep", "target_concept": "none"}
+{"id": "tes_sheep_08", "split": "test", "prompt": "a high quality picture of a sheep in a snowy landscape", "source_concept": "sheep", "target_concept": "none"}
+{"id": "tes_sheep_09", "split": "test", "prompt": "a photo of a sheep at sunset", "source_concept": "sheep", "target_concept": "none"}
+{"id": "tes_sheep_10", "split": "test", "prompt": "a detailed photograph of a sheep beside a tree", "source_concept": "sheep", "target_concept": "none"}
+{"id": "tes_sheep_11", "split": "test", "prompt": "a high quality picture of a sheep in a busy market", "source_concept": "sheep", "target_concept": "none"}
+{"id": "val_bicycle_00", "split": "validation", "prompt": "a photo of a bicycle in a sunny park", "source_concept": "bicycle", "target_concept": "none"}
+{"id": "val_bicycle_01", "split": "validation", "prompt": "a detailed photograph of a bicycle on a city street", "source_concept": "bicycle", "target_concept": "none"}
+{"id": "val_bicycle_02", "split": "validation", "prompt": "a high quality picture of a bicycle next to a wooden fence", "source_concept": "bicycle", "target_concept": "none"}
+{"id": "val_bicycle_03", "split": "validation", "prompt": "a photo of a bicycle in a grassy field", "source_concept": "bicycle", "target_concept": "none"}
+{"id": "tes_bicycle_04", "split": "test", "prompt": "a detailed photograph of a bicycle in soft morning light", "source_concept": "bicycle", "target_concept": "none"}
+{"id": "tes_bicycle_05", "split": "test", "prompt": "a high quality picture of a bicycle in front of a brick wall", "source_concept": "bicycle", "target_concept": "none"}
+{"id": "tes_bicycle_06", "split": "test", "prompt": "a photo of a bicycle on a rainy day", "source_concept": "bicycle", "target_concept": "none"}
+{"id": "tes_bicycle_07", "split": "test", "prompt": "a detailed photograph of a bicycle near a lake", "source_concept": "bicycle", "target_concept": "none"}
+{"id": "tes_bicycle_08", "split": "test", "prompt": "a high quality picture of a bicycle in a snowy landscape", "source_concept": "bicycle", "target_concept": "none"}
+{"id": "tes_bicycle_09", "split": "test", "prompt": "a photo of a bicycle at sunset", "source_concept": "bicycle", "target_concept": "none"}
+{"id": "tes_bicycle_10", "split": "test", "prompt": "a detailed photograph of a bicycle beside a tree", "source_concept": "bicycle", "target_concept": "none"}
+{"id": "tes_bicycle_11", "split": "test", "prompt": "a high quality picture of a bicycle in a busy market", "source_concept": "bicycle", "target_concept": "none"}
+{"id": "val_bird_00", "split": "validation", "prompt": "a photo of a bird in a sunny park", "source_concept": "bird", "target_concept": "none"}
+{"id": "val_bird_01", "split": "validation", "prompt": "a detailed photograph of a bird on a city street", "source_concept": "bird", "target_concept": "none"}
+{"id": "val_bird_02", "split": "validation", "prompt": "a high quality picture of a bird next to a wooden fence", "source_concept": "bird", "target_concept": "none"}
+{"id": "val_bird_03", "split": "validation", "prompt": "a photo of a bird in a grassy field", "source_concept": "bird", "target_concept": "none"}
+{"id": "tes_bird_04", "split": "test", "prompt": "a detailed photograph of a bird in soft morning light", "source_concept": "bird", "target_concept": "none"}
+{"id": "tes_bird_05", "split": "test", "prompt": "a high quality picture of a bird in front of a brick wall", "source_concept": "bird", "target_concept": "none"}
+{"id": "tes_bird_06", "split": "test", "prompt": "a photo of a bird on a rainy day", "source_concept": "bird", "target_concept": "none"}
+{"id": "tes_bird_07", "split": "test", "prompt": "a detailed photograph of a bird near a lake", "source_concept": "bird", "target_concept": "none"}
+{"id": "tes_bird_08", "split": "test", "prompt": "a high quality picture of a bird in a snowy landscape", "source_concept": "bird", "target_concept": "none"}
+{"id": "tes_bird_09", "split": "test", "prompt": "a photo of a bird at sunset", "source_concept": "bird", "target_concept": "none"}
+{"id": "tes_bird_10", "split": "test", "prompt": "a detailed photograph of a bird beside a tree", "source_concept": "bird", "target_concept": "none"}
+{"id": "tes_bird_11", "split": "test", "prompt": "a high quality picture of a bird in a busy market", "source_concept": "bird", "target_concept": "none"}
